@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    min-height: 100vh; 
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #222;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+header img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+    border-bottom: none;
+}
+
+nav ul li a:hover {
+    background-color: #f39c12;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    background-color: #f39c12; 
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+fieldset {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    border: none;
+    width: 380px;
+    margin-top: 120px;
+}
+
+legend {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: transparent;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
