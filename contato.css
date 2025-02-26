@@ -1,3 +1,4 @@
+/* Resetando margens, preenchimentos e definindo a box-sizing para border-box */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* Estilizando o corpo da página */
 body {
     background-color: #f4f4f4;
     color: #333;
@@ -16,6 +18,7 @@ body {
     text-align: center;
 }
 
+/* Estilizando o cabeçalho */
 header {
     display: flex;
     align-items: center;
@@ -28,16 +31,19 @@ header {
     top: 0;
 }
 
+/* Estilizando a imagem no cabeçalho */
 header img {
     width: 40px;
     margin-right: 10px;
 }
 
+/* Estilizando o título no cabeçalho */
 header h1 {
     font-size: 20px;
     margin: 0;
 }
 
+/* Estilizando a navegação */
 nav {
     display: flex;
     justify-content: right;
@@ -45,6 +51,7 @@ nav {
     width: 100%;
 }
 
+/* Estilizando a lista de navegação */
 nav ul {
     list-style: none;
     display: flex;
@@ -54,10 +61,12 @@ nav ul {
     margin: 0;
 }
 
+/* Estilizando os itens da lista de navegação */
 nav ul li {
     display: inline;
 }
 
+/* Estilizando os links da navegação */
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -67,18 +76,21 @@ nav ul li a {
     border-bottom: none;
 }
 
+/* Estilizando os links da navegação ao passar o mouse */
 nav ul li a:hover {
     background-color: #f39c12;
     border-radius: 5px;
     font-weight: bold;
 }
 
+/* Estilizando o link ativo na navegação */
 nav ul li a.active {
     background-color: #f39c12; 
     border-radius: 5px;
     font-weight: bold;
 }
 
+/* Estilizando o fieldset */
 fieldset {
     background-color: white;
     padding: 30px;
@@ -89,6 +101,7 @@ fieldset {
     margin-top: 100px;
 }
 
+/* Estilizando a legenda do fieldset */
 legend {
     font-size: 24px;
     font-weight: bold;
@@ -97,6 +110,7 @@ legend {
     text-align: center;
 }
 
+/* Estilizando os inputs de texto, email e número */
 input[type="text"], 
 input[type="email"], 
 input[type="number"] {
@@ -108,16 +122,19 @@ input[type="number"] {
     font-size: 16px;
 }
 
+/* Estilizando os checkboxes */
 input[type="checkbox"] {
     margin-right: 10px;
 }
 
+/* Estilizando os inputs ao focar */
 input:focus {
     border-color: #3498db;
     outline: none;
     box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
 }
 
+/* Estilizando os links */
 a {
     color: #3498db;
     font-size: 14px;
@@ -125,10 +142,12 @@ a {
     text-decoration: none !important;
 }
 
+/* Estilizando os links ao passar o mouse */
 a:hover {
     text-decoration: underline;
 }
 
+/* Estilizando os botões */
 button {
     background-color: #3498db;
     color: white;
@@ -141,6 +160,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
+/* Estilizando o rodapé */
 footer {
     background-color: transparent;
     color: #f4f4f4;
@@ -149,6 +169,7 @@ footer {
     margin-top: 20px;
 }
 
+/* Estilizando para telas menores */
 @media (max-width: 600px) {
     header {
         flex-direction: row;
@@ -176,5 +197,31 @@ footer {
     nav ul li a {
         font-size: 14px;
         padding: 6px 8px;
+    }
+
+    fieldset {
+        width: 100%;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    legend {
+        font-size: 20px;
+    }
+
+    input[type="text"], 
+    input[type="email"], 
+    input[type="number"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    footer {
+        padding: 10px;
     }
 }
