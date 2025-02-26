@@ -1,3 +1,4 @@
+/* Resetando margens, preenchimentos e definindo a box-sizing para border-box */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* Estilizando o corpo da página */
 body {
     background-color: #f4f4f4;
     color: #333;
@@ -16,6 +18,7 @@ body {
     text-align: center;
 }
 
+/* Estilizando o cabeçalho */
 header {
     display: flex;
     align-items: center;
@@ -28,16 +31,19 @@ header {
     top: 0;
 }
 
+/* Estilizando a imagem no cabeçalho */
 header img {
     width: 40px;
     margin-right: 10px;
 }
 
+/* Estilizando o título no cabeçalho */
 header h1 {
     font-size: 20px;
     margin: 0;
 }
 
+/* Estilizando a navegação */
 nav {
     display: flex;
     justify-content: right;
@@ -45,6 +51,7 @@ nav {
     width: 100%;
 }
 
+/* Estilizando a lista de navegação */
 nav ul {
     list-style: none;
     display: flex;
@@ -54,10 +61,12 @@ nav ul {
     margin: 0;
 }
 
+/* Estilizando os itens da lista de navegação */
 nav ul li {
     display: inline;
 }
 
+/* Estilizando os links da navegação */
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -67,18 +76,21 @@ nav ul li a {
     border-bottom: none;
 }
 
+/* Estilizando os links da navegação ao passar o mouse */
 nav ul li a:hover {
     background-color: #f39c12;
     border-radius: 5px;
     font-weight: bold;
 }
 
+/* Estilizando o link ativo na navegação */
 nav ul li a.active {
     background-color: #f39c12; 
     border-radius: 5px;
     font-weight: bold;
 }
 
+/* Estilizando o fieldset */
 fieldset {
     background-color: white;
     padding: 35px;
@@ -89,6 +101,7 @@ fieldset {
     margin-top: 120px;
 }
 
+/* Estilizando a legenda do fieldset */
 legend {
     font-size: 28px;
     font-weight: bold;
@@ -96,6 +109,7 @@ legend {
     margin-bottom: 20px;
 }
 
+/* Estilizando os inputs de texto, email, senha e data */
 input[type="text"], 
 input[type="email"], 
 input[type="password"], 
@@ -109,12 +123,14 @@ input[type="date"] {
     transition: 0.3s ease-in-out;
 }
 
+/* Estilizando os inputs ao focar */
 input:focus {
     border-color: #3498db;
     outline: none;
     box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
 }
 
+/* Estilizando o botão de submit */
 input[type="submit"] {
     background-color: #3498db;
     color: white;
@@ -127,11 +143,13 @@ input[type="submit"] {
     transition: background-color 0.3s ease-in-out, transform 0.2s;
 }
 
+/* Estilizando o botão de submit ao passar o mouse */
 input[type="submit"]:hover {
     background-color: #2980b9;
     transform: scale(1.05);
 }
 
+/* Estilizando o rodapé */
 footer {
     background-color: transparent;
     color: #f4f4f4;
@@ -140,6 +158,7 @@ footer {
     margin-top: 20px;
 }
 
+/* Estilizando para telas menores */
 @media (max-width: 500px) {
     header {
         padding: 10px;

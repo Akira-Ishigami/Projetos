@@ -1,3 +1,4 @@
+/* Resetando margens, preenchimentos e definindo a box-sizing para border-box */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* Estilizando o corpo da página */
 body {
     background-color: #f4f4f4;
     color: #333;
@@ -16,6 +18,7 @@ body {
     text-align: center;
 }
 
+/* Estilizando o cabeçalho */
 header {
     display: flex;
     align-items: center;
@@ -28,16 +31,19 @@ header {
     top: 0;
 }
 
+/* Estilizando a imagem no cabeçalho */
 header img {
     width: 40px;
     margin-right: 10px;
 }
 
+/* Estilizando o título no cabeçalho */
 header h1 {
     font-size: 20px;
     margin: 0;
 }
 
+/* Estilizando a navegação */
 nav {
     display: flex;
     justify-content: right;
@@ -45,6 +51,7 @@ nav {
     width: 100%;
 }
 
+/* Estilizando a lista de navegação */
 nav ul {
     list-style: none;
     display: flex;
@@ -54,10 +61,12 @@ nav ul {
     margin: 0;
 }
 
+/* Estilizando os itens da lista de navegação */
 nav ul li {
     display: inline;
 }
 
+/* Estilizando os links da navegação */
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -67,28 +76,33 @@ nav ul li a {
     border-bottom: none;
 }
 
+/* Estilizando os links da navegação ao passar o mouse */
 nav ul li a:hover {
     background-color: #f39c12;
     border-radius: 5px;
     font-weight: bold;
 }
 
+/* Estilizando o link ativo na navegação */
 nav ul li a.active {
     background-color: #f39c12; 
     border-radius: 5px;
     font-weight: bold;
 }
 
+/* Estilizando a seção */
 section {
     text-align: center;
     padding: 30px;
 }
 
+/* Estilizando o título da seção */
 section h1 {
     font-size: 24px;
     margin-bottom: 15px;
 }
 
+/* Estilizando o vídeo */
 video {
     width: 100%;
     max-width: 100%;
@@ -96,6 +110,7 @@ video {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilizando o artigo */
 article {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -103,6 +118,7 @@ article {
     margin-top: 20px;
 }
 
+/* Estilizando os divs dentro do artigo */
 article div {
     background: white;
     padding: 20px;
@@ -116,11 +132,13 @@ article div {
     align-items: center;
 }
 
+/* Estilizando os links dentro do artigo */
 article a {
     display: block;
     text-decoration: none;
 }
 
+/* Estilizando as imagens dentro do artigo */
 article img {
     width: 100%;
     max-width: 180px;
@@ -129,26 +147,67 @@ article img {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Estilizando as imagens dentro do artigo ao passar o mouse */
 article img:hover {
     transform: scale(1.2);
 }
 
+/* Estilizando para telas menores */
 @media (max-width: 500px) {
+    /* Reduzindo o padding do cabeçalho */
     header {
         padding: 10px;
     }
 
+    /* Ajustando o espaçamento entre os itens da navegação */
     nav ul {
         gap: 10px;
     }
 
+    /* Reduzindo o tamanho da fonte e o padding dos links da navegação */
     nav ul li a {
         font-size: 14px;
         padding: 6px 8px;
     }
+
+    /* Ajustando o padding da seção */
+    section {
+        padding: 20px;
+    }
+
+    /* Reduzindo o tamanho da fonte do título da seção */
+    section h1 {
+        font-size: 20px;
+    }
+
+    /* Ajustando o layout do artigo para uma coluna */
+    article {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajustando o padding e a altura mínima dos divs dentro do artigo */
+    article div {
+        padding: 15px;
+        min-height: 200px;
+    }
+
+    /* Ajustando o tamanho máximo das imagens dentro do artigo */
+    article img {
+        max-width: 100px;
+    }
+
+    /* Ajustando o padding do rodapé */
+    footer {
+        padding: 10px;
+    }
+
+    /* Ajustando o tamanho da fonte dos parágrafos */
+    p {
+        font-size: 14px;
+    }
 }
 
-
+/* Estilizando o rodapé */
 footer {
     display: flex;
     justify-content: center;
@@ -157,6 +216,7 @@ footer {
     position: relative;
 }
 
+/* Estilizando os parágrafos */
 p {
     text-align: justify;
 }
