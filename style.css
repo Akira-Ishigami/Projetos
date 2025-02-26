@@ -94,12 +94,17 @@ nav ul li a.active {
 section {
     text-align: center;
     padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 /* Estilizando o título da seção */
 section h1 {
     font-size: 24px;
     margin-bottom: 15px;
+    color: #333;
 }
 
 /* Estilizando o vídeo */
@@ -108,6 +113,14 @@ video {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilizando os parágrafos dentro da seção */
+section p {
+    text-align: justify;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 /* Estilizando o artigo */
