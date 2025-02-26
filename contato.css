@@ -109,21 +109,18 @@ legend {
     margin-bottom: 20px;
 }
 
-/* Estilizando os inputs de texto, email e número */
+/* Estilizando os inputs de texto, email, senha e data */
 input[type="text"], 
 input[type="email"], 
-input[type="number"] {
+input[type="password"], 
+input[type="date"] {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     font-size: 16px;
-}
-
-/* Estilizando os checkboxes */
-input[type="checkbox"] {
-    margin-right: 10px;
+    transition: 0.3s ease-in-out;
 }
 
 /* Estilizando os inputs ao focar */
@@ -133,30 +130,23 @@ input:focus {
     box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
 }
 
-/* Estilizando os links */
-a {
-    color: #3498db;
-    font-size: 14px;
-    margin-left: 10px;
-    text-decoration: none !important;
-}
-
-/* Estilizando os links ao passar o mouse */
-a:hover {
-    text-decoration: underline;
-}
-
-/* Estilizando os botões */
-button {
+/* Estilizando o botão de submit */
+input[type="submit"] {
     background-color: #3498db;
     color: white;
     border: none;
-    padding: 10px 0;
+    padding: 12px;
     width: 100%;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 18px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Estilizando o botão de submit ao passar o mouse */
+input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
 }
 
 /* Estilizando o rodapé */
