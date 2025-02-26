@@ -180,6 +180,7 @@ article img:hover {
 
     /* Reduzindo o tamanho da fonte e o padding dos links da navegação */
     nav ul li a {
+        width: 100%;
         font-size: 14px;
         padding: 6px 8px;
     }
