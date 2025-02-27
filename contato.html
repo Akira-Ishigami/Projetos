@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="css/contato.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo">
+        <img src="logo.png">
         <h1>NomeEmpresa</h1>
         <nav>
             <ul>
-                <li><a href="home.html" target="_self">Home</a></li>
+                <li><a href="index.html" target="_self">Home</a></li>
                 <li><a href="cadastro.html" target="_self">Cadastro</a></li>
                 <li><a href="contato.html" target="_self">Contato</a></li>
             </ul>
@@ -22,22 +22,19 @@
 
     <fieldset>
         <legend>Contato</legend>
-        <form action="home.html" method="post">
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" required>
+        <form action="index.html" method="post">
+            <input type="text" id="nome" name="nome" placeholder="Nome:" required>
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="E-mail:" required>
 
-            <label for="telefone">Telefone</label>
-            <input type="number" id="telefone" name="telefone" required>
+            <input type="number" id="telefone" name="telefone" placeholder="Telefone:" required maxlength="15">
 
-            <button type="submit">Enviar</button>
+            <input type="submit" value="Enviar">
         </form>
     </fieldset>
 
     <footer>
-        <p>Feito por Akira</p>
+        <!-- Feito por Akira -->
     </footer>
 </body>
 </html>
